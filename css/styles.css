@@ -1,0 +1,113 @@
+body {
+    font-family: 'Lato', sans-serif;
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+nav {
+    font-size: 1.5rem;
+}
+
+h2 {
+    line-height: 2.5rem !important;
+}
+
+.pity {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.bg-inverse {
+    background-color: #175976 !important;
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.plus-box {
+    text-align: center;
+    padding: 3rem;
+}
+
+.plus-box .plus-icon {
+    font-size: 4rem;
+    color: #7ab3cc;
+}
+
+.plus-box .plus-text {
+}
+
+.section-dark {
+    background-color: #7ab3cc;
+    color: white;
+}
+
+.fa-bigger {
+    font-size: 2.3rem;
+}
+
+.section-gray {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #7ab3cc;
+    border-top: 1px solid #7ab3cc;
+}
+
+.section-top {
+
+}
+
+.btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.75rem;
+    border-radius: .3rem;
+}
+
+.action-box {
+    padding: 0 4rem 0 4rem;
+}
+
+.btn-info {
+    background-color: #7ab3cc;
+    border-color: #7ab3cc;
+}
+
+.footer {
+    /*background-color: #175976;*/
+    border-top: 5px #175976 solid;
+    font-size: 1.5rem;
+}
+
+.carousel-caption {
+    color: #fff;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #7ab3cc;
+}
+
+.carousel-inner img {
+    margin: auto;
+}
+
+@media (max-width: 800px) {
+    .carousel .carousel-item {
+        max-height: 300px;
+        overflow: hidden;
+    }
+}
+
+*[id]:before {
+    display: block;
+    content: " ";
+    margin-top: -50px;
+    height: 50px;
+    visibility: hidden;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #fe8a19;
+    border-color: #fe8a19;
+}
