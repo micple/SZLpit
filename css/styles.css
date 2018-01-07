@@ -25,6 +25,9 @@ h2 {
     color: rgba(255, 255, 255, 1);
 }
 
+.embed-responsive-16by9 {
+    box-shadow: 2px 3px 0px rgba(4, 4, 4, 0.3);
+}
 
 .plus-box {
     text-align: center;
@@ -33,14 +36,14 @@ h2 {
 
 .plus-box .plus-icon {
     font-size: 4rem;
-    color: #7ab3cc;
+    color: #579ED9;
 }
 
 .plus-box .plus-text {
 }
 
 .section-dark {
-    background-color: #7ab3cc;
+    background: linear-gradient(135deg, #4cc1bd 0%, #3f95ea 100%);
     color: white;
 }
 
@@ -84,7 +87,7 @@ h2 {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #7ab3cc;
+    background-color: #59ABCE;
 }
 
 .carousel-inner img {
@@ -110,4 +113,5 @@ h2 {
     color: #fff;
     background-color: #fe8a19;
     border-color: #fe8a19;
+    box-shadow: 2px 3px 0px rgba(4, 4, 4, 0.3);
 }
