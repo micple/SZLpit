@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112311797-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112311797-1');
+      gtag('config', 'AW-821512127');
+    </script>
+    <!-- End of global site tag (gtag.js) - Google Analytics -->
+    <!-- Event snippet for Pobranie programu conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-821512127/E3dOCOKFkHsQv4_dhwM',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+    <!-- End of the snippet-->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Rozlicz PIT za 2017 - PIT28, PIT36, PIT36L, PIT37, PIT38, PIT39 i inne. Bezpłatny program pozwoli wypełnić zeznanie szybko, sprawnie i wydrukować lub wysłać e-deklaracje do urzędu skarbowego.">
@@ -23,22 +52,24 @@
 
     <!-- Custom styles for this template -->
     <link href="./css/styles.css" rel="stylesheet">
+    
+    <!-- Coockie alert -->
+    <script src="js/CookieAlert.min.js"></script>
+    <script>
+        CookieAlert.init({
+    style: 'light',
+	position: 'bottom',
+	opacity: '1',
+	displayTime: 0,
+	cookiePolicy: 'http://www.pit.zwierzetaludziom.pl/sites/o-ciasteczkach.html',
+	text: 'Ten serwis wykorzystuje pliki cookies. Korzystanie z witryny oznacza zgodę na ich zapis lub odczyt wg ustawień przeglądarki.'
+        });
+    </script>
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-M9VGRRV');</script>
-    <!-- End Google Tag Manager -->
 
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9VGRRV"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
 <div class="container">
 
@@ -150,19 +181,19 @@
         </div>
         <div class="row">
             <div class="col-md-4 text-center ">
-                <a href="https://www.pitax.pl/pobierz/0000302303/" target="_blank"><button type="button" class="btn btn-primary btn-lg mt-5"><span class="fa-bigger"><i
+                <a onclick="return gtag_report_conversion('https://www.pitax.pl/pobierz/0000302303/');" href="https://www.pitax.pl/pobierz/0000302303/" target="_blank"><button type="button" class="btn btn-primary btn-lg mt-5"><span class="fa-bigger"><i
                         class="fas fa-download "></i></span><br/>Pobierz program
                 </button></a>
                 <div class="text-muted small mt-3 action-box">Pobierz program i zainstaluj go lokalnie</div>
             </div>
             <div class="col-md-4 text-center ">
-                <a href="https://www.pitax.pl/rozlicz/0000302303/" target="_blank"><button type="button" class="btn btn-primary btn-lg mt-5"><span class="fa-bigger"><i
+                <a onclick="return gtag_report_conversion('https://www.pitax.pl/rozlicz/0000302303/');" href="https://www.pitax.pl/rozlicz/0000302303/" target="_blank"><button type="button" class="btn btn-primary btn-lg mt-5"><span class="fa-bigger"><i
                         class="fas fa-cloud "></i></span><br/>Rozlicz się Online
                 </button></a>
                 <div class="text-muted small mt-3 action-box">Skorzystaj z formularza Online na stronie PITax.pl</div>
             </div>
             <div class="col-md-4 text-center ">
-                <a href="http://www.pitax.pl/krs/formularze/0000302303/" target="_blank"><button type="button" class="btn btn-primary btn-lg mt-5 "><span class="fa-bigger"> <i
+                <a onclick="return gtag_report_conversion('http://www.pitax.pl/krs/formularze/0000302303/');" href="http://www.pitax.pl/krs/formularze/0000302303/" target="_blank"><button type="button" class="btn btn-primary btn-lg mt-5 "><span class="fa-bigger"> <i
                         class="fas fa-file-pdf"></i></span><br/>Aktywne formularze PIT
                 </button></a>
                 <div class="text-muted small mt-3 action-box">Pobierz edytowalne pliki PDF</div>
